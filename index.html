@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hajar Errafiai – Data/AI Engineering Student</title>
+<meta name="description" content="Portfolio of Hajar Errafiai, Computer Engineering and AI student at ENSA Agadir: data tools, applied AI and engineering projects.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📐%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f6f7f9;
+  --ink: #16202c;
+  --muted: #55626f;
+  --rule: #cdd4dc;
+  --accent: #1d4e89;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12161c;
+    --ink: #e7eaee;
+    --muted: #a5afbb;
+    --rule: #303a46;
+    --accent: #8db9ec;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1rem; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Alegreya", Georgia, "Times New Roman", serif;
+  font-size: 1.1875rem;
+  line-height: 1.55;
+}
+main { max-width: 44rem; margin: 0 auto; padding: 3.5rem 1.25rem 4rem; }
+a { color: var(--accent); text-underline-offset: 0.18em; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+h1 { font-size: 2.9rem; line-height: 1.1; margin: 0; font-weight: 700; }
+.role { font-size: 1.5rem; font-style: italic; color: var(--muted); margin: 0.35rem 0 1.25rem; }
+.intro { max-width: 36rem; margin: 0 0 1.25rem; }
+.links { display: flex; flex-wrap: wrap; gap: 0.35rem 1.75rem; margin: 0; padding: 0; list-style: none; }
+
+h2 { font-size: 1.6rem; margin: 3.25rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--ink); font-weight: 700; }
+h3 { font-size: 1.35rem; margin: 0; font-weight: 700; line-height: 1.25; }
+.meta { margin: 0.15rem 0 0.6rem; color: var(--muted); font-style: italic; }
+article { margin: 0 0 2.25rem; }
+article > p { margin: 0 0 0.75rem; }
+
+.spec { margin: 0; }
+.spec div {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-top: 1px solid var(--rule);
+}
+.spec dt { font-weight: 700; }
+.spec dd { margin: 0; }
+
+ul.plain { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+ul.plain li { margin: 0.25rem 0; }
+.note { color: var(--muted); font-size: 1rem; margin-top: 0.6rem; }
+
+@media (max-width: 34rem) {
+  main { padding-top: 2.5rem; }
+  h1 { font-size: 2.3rem; }
+  .spec div { grid-template-columns: 1fr; gap: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Hajar Errafiai</h1>
+  <p class="role">Data/AI Engineering Student</p>
+  <p class="intro">I’m a Computer Engineering and Artificial Intelligence student at ENSA Agadir. I build practical data tools and applied-AI prototypes, and I like problems where data meets real-world risk and engineering, from industrial safety to life sciences.</p>
+  <ul class="links">
+    <li><a id="mail" href="https://www.linkedin.com/in/hajarerrafiai-ing/">Email</a></li>
+    <li><a href="https://www.linkedin.com/in/hajarerrafiai-ing/" rel="noopener">LinkedIn</a></li>
+    <li>Agadir, Morocco</li>
+  </ul>
+</header>
+
+<section aria-labelledby="projects">
+  <h2 id="projects">Projects</h2>
+
+  <article>
+    <h3>Flame in Free Fall: AI fire risk prediction</h3>
+    <p class="meta">NASA Space Apps Challenge, Agadir, 2026. Team project.</p>
+    <p>A system that predicts fire risk from Apollo 13 mission data and shows how flames behave differently in microgravity and under gravity. It combines a machine-learning classifier, a flame physics model with a 3D visualization, and a NASA-style risk matrix inside a crew-dashboard interface.</p>
+    <dl class="spec">
+      <div><dt>My role</dt><dd>HSE risk matrix, team coordination and task distribution.</dd></div>
+      <div><dt>Built with</dt><dd>XGBoost classifier (about 95% accuracy reported on the team’s 6,000-point dataset, four risk levels), FastAPI backend, WebGL flame visualization, Plotly charts.</dd></div>
+      <div><dt>Data</dt><dd>Based on publicly available Apollo 13 mission reports.</dd></div>
+      <div><dt>Status</dt><dd>Educational hackathon prototype.</dd></div>
+      <div><dt>Code</dt><dd><a href="https://github.com/Nasrallah-07/apollo13-orbit-deck" rel="noopener">Team repository on GitHub</a></dd></div>
+    </dl>
+  </article>
+
+  <article>
+    <h3>HR Email Parser</h3>
+    <p class="meta">Independent project, Python.</p>
+    <p>Turns a messy, hand-collected text list of about 1,700 lines of company HR contacts into a clean, searchable, deduplicated CSV of company, field and email. I built it to replace a fully manual sorting process during my internship search.</p>
+    <dl class="spec">
+      <div><dt>My role</dt><dd>Designed and wrote it on my own.</dd></div>
+      <div><dt>Approach</dt><dd>One parser for each of the seven text layouts, heuristics to separate company names from fields, and a review file for ambiguous or suspicious rows, so that a human only checks the flagged ones instead of the code guessing silently.</dd></div>
+      <div><dt>Built with</dt><dd>Python 3 (standard library only), regular expressions, Excel for the manual review step.</dd></div>
+      <div><dt>Code</dt><dd>Private repository, because the source list contains real people’s email addresses. I’m happy to walk through the code on request.</dd></div>
+    </dl>
+  </article>
+
+  <article>
+    <h3>Two-axis solar tracker</h3>
+    <p class="meta">ODC Center, Technopark Agadir, 2026. Team project.</p>
+    <p>A prototype that moves a platform horizontally and vertically using four light sensors and two servo motors, designed as the base for a solar panel.</p>
+    <dl class="spec">
+      <div><dt>My role</dt><dd>Arduino programming, Tinkercad design and simulation, team coordination.</dd></div>
+      <div><dt>Built with</dt><dd>Arduino Nano, four LDR light sensors, two SG90 servo motors, 3D-printed structure.</dd></div>
+      <div><dt>Status</dt><dd>Prototype. Servo movement was tested; sensor calibration and energy-output measurements are planned next steps.</dd></div>
+      <div><dt>Code</dt><dd><a href="https://github.com/semroot555/Solar_Tracker_Dual_Axis" rel="noopener">Team repository on GitHub</a></dd></div>
+    </dl>
+  </article>
+</section>
+
+<section aria-labelledby="experience">
+  <h2 id="experience">Experience</h2>
+  <article>
+    <h3>Intern, OCP Group</h3>
+    <p class="meta">Water Desalination Station, Laayoune, August 2026.</p>
+    <ul class="plain">
+      <li>Collected, processed and analyzed operational and HSE data.</li>
+      <li>Carried out a risk assessment of auxiliary chemical products following OCP’s HSE standards and methodology, using an Excel risk matrix that links tasks to chemical products (hazard, risk rating, priority, prevention measures) with a summary dashboard.</li>
+      <li>Contributed to waste management activities.</li>
+    </ul>
+    <p class="note">Internal details are confidential, so this is a general description.</p>
+  </article>
+</section>
+
+<section aria-labelledby="skills">
+  <h2 id="skills">Skills</h2>
+  <dl class="spec">
+    <div><dt>Programming</dt><dd>Python, SQL, Java, C++, C</dd></div>
+    <div><dt>Data and AI</dt><dd>Predictive modeling, regex-based data parsing, prompt-based AI workflows</dd></div>
+    <div><dt>Tools</dt><dd>Excel, LaTeX, GitHub, Arduino IDE, QGIS, EPANET</dd></div>
+    <div><dt>Other</dt><dd>HSE risk assessment, team coordination and task management</dd></div>
+  </dl>
+</section>
+
+<section aria-labelledby="contact">
+  <h2 id="contact">Contact</h2>
+  <p>I’m looking for a summer internship, or a remote internship during the academic year, in machine learning, data or applied AI. My CV is available on request.</p>
+</section>
+
+</main>
+
+<script>
+(function () {
+  var a = document.getElementById('mail');
+  if (!a) return;
+  var user = 'hajar23.24e', domain = 'gmail.com';
+  a.href = 'mailto:' + user + '@' + domain;
+  a.textContent = user + '@' + domain;
+})();
+</script>
+</body>
+</html>
